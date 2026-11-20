@@ -19,8 +19,8 @@ def load_clean_data(a):
     return clean_rows
 
 def to_arrhenius_point(temp_c, sigma):
-    temp_c = round(1000/(temp_c+273.15), 2)
-    sigma = round(math.log10(sigma), 2)
+    temp_c = (1000/(temp_c+273.15))
+    sigma = (math.log10(sigma))
     return (temp_c, sigma)
 
 
